@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+/* MortgageCalculator.css */
+
+.container {
+
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    width:850px;
+    margin: 0;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.calculate-page {
+    width: 425px;
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+}
+.heading-tag {
+    width: 410px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+
+.heading-tag h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.heading-tag h5 {
+    margin: 0;
+    color: #ff0000;
+    cursor: pointer;
+    user-select: none;
+}
+.amount-box {
+    margin-bottom: 20px;
+}
+
+.amount-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1em;
+    color:hsl(200, 26%, 54%);
+}
+
+.input-tag {
+    position: relative;
+}
+
+.input-tag input {
+    width: 100%;
+    display: block;
+    padding: 10.3px;
+    margin: 10px 0;
+    font-size: 1.5em;
+    padding-left: 3.3rem;
+    /* Adjust to make space for the icon */
+    box-sizing: border-box;
+}
+input{
+    border:1px solid rgb(137, 95, 176);
+    border-radius: 5px;
+    font-weight: 400;
+}
+input:focus{
+    outline-color:gray;
+}
+ i {
+    position: absolute;
+    top: 50%;
+    left:0;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    border-radius: 3px;
+    background-color: #aaaaaa5e;
+    border-radius: 4px;
+}
+
+.year-intrest{
+    display: flex;
+}
+.year-intrest > div{
+    margin-left: 4px;
+    position: relative;
+}
+.year-intrest > div input{
+    padding-left:.2em;
+}
+.year-intrest >div span{
+    position: absolute;
+    top: 63%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #aaaaaa5e;
+    font-size: 1.2rem;
+    padding: 0.6rem 0.7rem;
+    border-radius: 4px;
+}
+.checked-box > div{
+    display: flex;
+    gap: 10px ;
+    align-items: baseline;
+    padding: 6px;
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid hsl(200, 26%, 54%);
+}
+.Mortgage-Type >p{
+    color: hsl(200, 26%, 54%);
+}
+.checked-box label{
+    color: #111;
+}
+.checked-box >.repayment{
+    border-color: orange;
+    background-color: rgba(255, 166, 0, 0.137);
+}
+.btn button{
+    color: #111;
+    margin-top: 20px;
+    border: 1px;
+    background-color: orange;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius:30px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.result-container{
+    background-color:hsl(202, 55%, 16%);
+    margin-left: 15px;
+    padding: 10px;
+    width: 425px;
+    height: auto;
+    border-radius: 0 5px 5px 120px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.result-container .img-tag{
+    text-align: center;
+}
+.result-container .content-tag h3{
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+}
+.result-container .content-tag p{
+    color: rgba(245, 245, 245, 0.872);
+    font-size: 14px;
+    font-weight: 400;
+}
+.result-container  .result-add-tag{
+    padding: 10px;
+    
+}
+.result-add-tag h3{
+    color: white;
+    font-size: 1.4rem;
+}
+.result-add-tag p{
+    color: rgba(245, 245, 245, 0.831);
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+.box{
+   display: flex;
+   align-items: baseline;
+   justify-content: center;
+}
+.amount-box2{
+    width: 200px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: hsl(200, 42%, 23%);
+}
+.amount-box2 span,b{
+    font-size: 1.5rem;
+    color: white;
+}
+.amount-box2 span{
+    color: yellow;
+    border-bottom: 1px solid whitesmoke;
+}
+
+@media screen and (max-width:768px) {
+    body {
+    height: auto;
+    }
+    .container {
+        width: 750px;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .calculate-page {
+        width: 700px;
+        display: flex;
+        flex-flow: column;
+        padding: 10px;
+    }
+
+    .heading-tag {
+        width: 700px;
+    }
+
+    .result-container {
+        margin-left: 0;
+        padding: 15px;
+        width: 768px;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .result-container p {
+        font-size: 1.3rem;
+    }
+
+    .content-tag p{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width:600px) {
+    body {
+    height: auto;
+    }
+    .container {
+        width: 550px;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .calculate-page {
+        width: 550px;
+        display: flex;
+        flex-flow: column;
+       
+    }
+
+    .heading-tag {
+        width: 500px;
+    }
+
+    .result-container {
+        margin-left: 0;
+        padding: 15px;
+        width: 550px;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .result-container p {
+        font-size: 1.3rem;
+    }
+
+    .content-tag p{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        width: 450px;
+        flex-flow: column;
+        margin: 0;
+    }
+    .calculate-page {
+        width: 400px;
+        margin:0;
+    }
+
+    .heading-tag {
+        width: 400px;
+    }
+    .result-container {
+        width: 450px;
+    }
+    .result-container p{
+        font-size: 1rem;
+    }
+    .content-tag{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 380px) {
+  
+    .container {
+        width: 380px;
+        flex-flow: column;
+        margin-top: 10px;
+    }
+
+    .calculate-page {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        padding: 10px;
+    }
+
+    .heading-tag {
+        width: 100%;
+    }
+
+    .result-container {
+        margin-left: 0;
+        padding: 15px;
+        width: 100%;
+        border-radius: 0;
+        
+    }
+
+    .result-container p {
+        font-size: 1rem;
+    }
+
+    .content-tag {
+        font-size: 1.3rem;
+    }
+}
